@@ -79,3 +79,17 @@ Thu 21 Mar 2024 02:48:33 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 6532971
+Thu 21 Mar 2024 02:48:54 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:101:17: error: comparison between pointer and integer [-Werror]
+  101 |   while(top(P1) != -1){
+      |                 ^~
+exercises.c:107:22: error: comparison between pointer and integer [-Werror]
+  107 |   while(top(pilaAux) != -1){
+      |                      ^~
+cc1: all warnings being treated as errors
+Compilation failed
+6404b2b
