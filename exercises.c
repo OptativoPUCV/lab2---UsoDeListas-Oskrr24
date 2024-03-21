@@ -101,15 +101,15 @@ void copia_pila(Stack* P1, Stack* P2) {
   while(*(int*)top(P1) != -1){
     int *dato = top(P1); 
     push(pilaAux, dato);
-    
+    pop(P1);
   }
   
   while(*(int*)top(pilaAux) != -1){
     int *nuevoDato = top(pilaAux); 
     push(P2, nuevoDato);
-    
+    pop(P2);
   }
-  
+  free(pilaAux);
 }
 
 /*
